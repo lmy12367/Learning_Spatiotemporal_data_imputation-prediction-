@@ -19,8 +19,8 @@ CONFIG = {
 
     # --- 实验通用设置 ---
     "seed": 1000,
-    "burn_iter": 1000,
-    "gibbs_iter": 200,
+    "burn_iter": 50,
+    "gibbs_iter": 10,
 
     # --- 缺失场景配置 ---
     "missing_scenarios": [
@@ -34,26 +34,26 @@ CONFIG = {
         "Guangzhou Speed Data": {
             # 现在路径是动态构建的
             "relative_path": "Guangzhou-data-set/tensor.mat",
-            "rank_rm": 30, "rank_nm": 10,
+            "rank_rm": 20, "rank_nm": 10,
             "time_lags": np.array([1, 2, 144]),
             "init_scale_rm": 0.1, "init_scale_nm": 0.01
         },
         "Birmingham Parking Data": {
             "relative_path": "Birmingham-data-set/tensor.mat",
-            "rank_rm": 10, "rank_nm": 10,
+            "rank_rm": 20, "rank_nm": 20,
             "time_lags": np.array([1, 2, 18]),
             "init_scale_rm": 0.1, "init_scale_nm": 0.01
         },
         "Hangzhou Flow Data": {
             "relative_path": "Hangzhou-data-set/tensor.mat",
-            "rank_rm": 10, "rank_nm": 10,
+            "rank_rm": 30, "rank_nm": 20,
             "time_lags": np.array([1, 2, 108]),
             "init_scale_rm": 0.1, "init_scale_nm": 0.01,
             "option": "pca"
         },
         "Seattle Speed Data": {
             "relative_path": "Seattle-data-set/tensor.npz",
-            "rank_rm": 10, "rank_nm": 4,
+            "rank_rm": 30, "rank_nm": 10,
             "time_lags": np.array([1, 2, 288]),
             "init_scale_rm": 0.1, "init_scale_nm": 0.01
         }
