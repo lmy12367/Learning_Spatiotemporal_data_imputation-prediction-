@@ -1,0 +1,16 @@
+BTMF Model Evaluation Summary
+========================================
+
+                Dataset                 Scenario  Rank     MAPE       RMSE Time (s)
+   Guangzhou Speed Data     Random Missing (40%)    20 0.902387  37.429739   723.40
+   Guangzhou Speed Data     Random Missing (60%)    20 0.891561  37.024153   749.86
+   Guangzhou Speed Data Non-random Missing (40%)    10 0.971180  39.589364   213.76
+Birmingham Parking Data     Random Missing (40%)    20 1.632087 857.847615   122.68
+Birmingham Parking Data     Random Missing (60%)    20 1.508911 838.287662   127.37
+Birmingham Parking Data Non-random Missing (40%)    20 2.223895 869.666427   126.58
+     Hangzhou Flow Data     Random Missing (40%)    30 1.113361 199.028444   174.69
+     Hangzhou Flow Data     Random Missing (60%)    30 1.175483 201.358269   169.48
+     Hangzhou Flow Data Non-random Missing (40%)    20 1.011585 195.149640   106.99
+     Seattle Speed Data     Random Missing (40%)    30 0.903607  53.893349   796.69
+     Seattle Speed Data     Random Missing (60%)    30 0.915587  54.524365   769.54
+     Seattle Speed Data Non-random Missing (40%)    10 0.979813  57.692322   166.57
